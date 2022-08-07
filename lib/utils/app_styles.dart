@@ -4,7 +4,7 @@ class AppStyles {
   static Color primaryColor = const Color(0xFF687daf);
   static Color textColor = const Color(0xFF3b3b3b);
   static Color bgColor = const Color(0xFFeeedf2);
-  static Color orangeColor = const Color.fromARGB(255, 238, 90, 16);
+  static Color orangeColor = const Color(0xFFF37B67);
   static Color topTicketColor = const Color(0xFF526799);
   static Color lightGreyColor = Colors.grey.shade500;
 

@@ -1,3 +1,4 @@
+import 'package:bookticket/screens/hotel_sceen.dart';
 import 'package:bookticket/screens/ticket_view.dart';
 import 'package:bookticket/utils/app_styles.dart';
 import 'package:flutter/material.dart';
@@ -90,7 +91,42 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           const Gap(20),
-          TicketView(),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            padding: const EdgeInsets.only(left: 16),
+            child: Row(
+              children: [
+                TicketView(),
+                TicketView(),
+                TicketView(),
+              ],
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text("Popular Destinations", style: AppStyles.headlineStyle2),
+                InkWell(
+                    onTap: () {},
+                    child: Text("See All", style: AppStyles.headlineStyle4)),
+              ],
+            ),
+          ),
+          const Gap(15),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            padding: const EdgeInsets.only(left: 16),
+            child: Row(
+              children: [
+                HotelScreen(),
+                HotelScreen(),
+                HotelScreen(),
+                HotelScreen(),
+              ],
+            ),
+          ),
         ],
       ),
     );
